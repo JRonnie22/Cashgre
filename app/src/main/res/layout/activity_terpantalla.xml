@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Terpantalla">
+
+    <ImageView
+        android:id="@+id/p3logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/tv1intrucciones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Instrucciones y consejos de uso"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/p3logo"
+        app:layout_constraintVertical_bias="0.100"
+        android:textStyle="bold"
+        android:textSize="23dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/instruccion1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1) Clasifica los tipos de materiales que deseas reciclar."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv1intrucciones"
+        app:layout_constraintVertical_bias="0.100"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        />
+
+    <TextView
+        android:id="@+id/instruccion2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2) Clasifica y pesa cada uno de los materiales que deseas reciclar."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/instruccion1"
+        app:layout_constraintVertical_bias="0.077"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        />
+
+    <TextView
+        android:id="@+id/instruccion3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="3) Digita en Casgre el peso en gramos (gr) de cada material. "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/instruccion2"
+        app:layout_constraintVertical_bias="0.077"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        />
+
+    <TextView
+        android:id="@+id/tv2intrucciones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="¡Listo ya puedes ganar dinero cuidando el planeta!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/instruccion3"
+        app:layout_constraintVertical_bias="0.180"
+        android:textStyle="bold"
+        android:textSize="22dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/instruciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Continuar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv2intrucciones"
+        app:layout_constraintVertical_bias="0.200"
+        android:backgroundTint="@color/verde"
+        android:textSize="17dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

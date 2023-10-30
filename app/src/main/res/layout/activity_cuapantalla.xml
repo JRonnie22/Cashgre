@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".cuapantalla">
+
+    <ImageView
+        android:id="@+id/p4logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/tvformulario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Formulario de registro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/p4logo"
+        app:layout_constraintVertical_bias="0.055"
+        android:textSize="23dp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tvnombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre:"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.100"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvformulario"
+        app:layout_constraintVertical_bias="0.083"
+        android:textSize="20dp"
+        android:textStyle="italic"/>
+
+    <TextView
+        android:id="@+id/tvtipoid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No.de C.C.:"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.100"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvnombre"
+        app:layout_constraintVertical_bias="0.050"
+        android:textSize="20dp"
+        android:textStyle="italic"/>
+
+    <TextView
+        android:id="@+id/tvemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email:"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.100"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvtipoid"
+        app:layout_constraintVertical_bias="0.050"
+        android:textSize="20dp"
+        android:textStyle="italic"/>
+
+    <TextView
+        android:id="@+id/tvcelular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Celular:"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.100"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvemail"
+        app:layout_constraintVertical_bias="0.050"
+        android:textSize="20dp"
+        android:textStyle="italic"/>
+
+    <TextView
+        android:id="@+id/tvdireccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dirección:"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.100"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvcelular"
+        app:layout_constraintVertical_bias="0.050"
+        android:textSize="20dp"
+        android:textStyle="italic"/>
+
+    <TextView
+        android:id="@+id/tvfotoperfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Foto de perfil:"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.100"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvdireccion"
+        app:layout_constraintVertical_bias="0.050"
+        android:textSize="20dp"
+        android:textStyle="italic"/>
+
+    <TextView
+        android:id="@+id/tvterminos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Acepto terminos y condiciones"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.250"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvfotoperfil"
+        app:layout_constraintVertical_bias="0.4"
+        android:textSize="17dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvterminoslink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(Leer)"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.780"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvfotoperfil"
+        app:layout_constraintVertical_bias="0.4"
+        android:textSize="17dp"
+        android:textStyle="normal"
+        android:textColor="#2B43C5"/>
+
+    <CheckBox
+        android:id="@+id/cbterminos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.911"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvfotoperfil"
+        app:layout_constraintVertical_bias="0.394" />
+
+    <EditText
+        android:id="@+id/etnombre"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text=""
+        android:hint="Nombre de usuario"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.730"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvformulario"
+        app:layout_constraintVertical_bias="0.083"
+        android:background="#ABDAA3"/>
+
+    <EditText
+        android:id="@+id/etcedula"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="No.cedula de ciudadania"
+        android:inputType="text"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.734"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etnombre"
+        app:layout_constraintVertical_bias="0.019"
+        android:background="#ABDAA3"/>
+
+    <EditText
+        android:id="@+id/etemail"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="Correo electronico"
+        android:inputType="text"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.734"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etcedula"
+        app:layout_constraintVertical_bias="0.019"
+        android:background="#ABDAA3"/>
+
+    <EditText
+        android:id="@+id/etcelular"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="Celular personal"
+        android:inputType="text"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.734"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etemail"
+        app:layout_constraintVertical_bias="0.019"
+        android:background="#ABDAA3"/>
+
+    <EditText
+        android:id="@+id/etdireccion"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="Direccion de recogida"
+        android:inputType="text"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.734"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etcelular"
+        app:layout_constraintVertical_bias="0.019"
+        android:background="#ABDAA3"/>
+
+    <ImageView
+        android:id="@+id/fotoperfil"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.816"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etdireccion"
+        app:layout_constraintVertical_bias="0.01"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/btomarfoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tomar foto"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.44"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etdireccion"
+        app:layout_constraintVertical_bias="0.157"
+        android:backgroundTint="@color/verde"/>
+
+    <Button
+        android:id="@+id/butregistrarme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/verde"
+        android:text="Registrarme"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.500"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvformulario"
+        app:layout_constraintVertical_bias="0.88" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
