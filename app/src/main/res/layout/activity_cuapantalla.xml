@@ -90,61 +90,43 @@
         android:textStyle="italic"/>
 
     <TextView
-        android:id="@+id/tvdireccion"
+        android:id="@+id/tvcontrasena"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Dirección:"
+        android:text="Contraseña:"
+        android:textSize="20dp"
+        android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.100"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvcelular"
-        app:layout_constraintVertical_bias="0.050"
-        android:textSize="20dp"
-        android:textStyle="italic"/>
-
-    <TextView
-        android:id="@+id/tvfotoperfil"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Foto de perfil:"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.100"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvdireccion"
-        app:layout_constraintVertical_bias="0.050"
-        android:textSize="20dp"
-        android:textStyle="italic"/>
+        app:layout_constraintVertical_bias="0.050" />
 
     <TextView
         android:id="@+id/tvterminos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Acepto terminos y condiciones"
+        android:textSize="17dp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.250"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvfotoperfil"
-        app:layout_constraintVertical_bias="0.4"
-        android:textSize="17dp"
-        android:textStyle="bold"/>
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/tvterminoslink"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="(Leer)"
+        android:textColor="#2B43C5"
+        android:textSize="17dp"
+        android:textStyle="normal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.780"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvfotoperfil"
-        app:layout_constraintVertical_bias="0.4"
-        android:textSize="17dp"
-        android:textStyle="normal"
-        android:textColor="#2B43C5"/>
+        app:layout_constraintStart_toStartOf="parent" />
 
     <CheckBox
         android:id="@+id/cbterminos"
@@ -154,9 +136,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.911"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvfotoperfil"
-        app:layout_constraintVertical_bias="0.394" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/etnombre"
@@ -226,8 +206,9 @@
         android:id="@+id/etdireccion"
         android:layout_width="200dp"
         android:layout_height="40dp"
+        android:background="#ABDAA3"
         android:ems="10"
-        android:hint="Direccion de recogida"
+        android:hint="Contraseña"
         android:inputType="text"
         android:text=""
         app:layout_constraintBottom_toBottomOf="parent"
@@ -235,33 +216,7 @@
         app:layout_constraintHorizontal_bias="0.734"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etcelular"
-        app:layout_constraintVertical_bias="0.019"
-        android:background="#ABDAA3"/>
-
-    <ImageView
-        android:id="@+id/fotoperfil"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.816"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etdireccion"
-        app:layout_constraintVertical_bias="0.01"
-        tools:srcCompat="@tools:sample/avatars" />
-
-    <Button
-        android:id="@+id/btomarfoto"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Tomar foto"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.44"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etdireccion"
-        app:layout_constraintVertical_bias="0.157"
-        android:backgroundTint="@color/verde"/>
+        app:layout_constraintVertical_bias="0.019" />
 
     <Button
         android:id="@+id/butregistrarme"

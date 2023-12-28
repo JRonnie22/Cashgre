@@ -18,11 +18,14 @@ public class Terpantalla extends AppCompatActivity {
         setContentView(R.layout.activity_terpantalla);
 
         instruciones=(Button) findViewById(R.id.instruciones);
+        Intent recibiremail=getIntent();
+        String email=recibiremail.getStringExtra("usuario");
 
         instruciones.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent instruciones = new Intent(Terpantalla.this, Segpantalla.class);
+                instruciones.putExtra("usuario",email);
                 startActivity(instruciones);
             }
         });

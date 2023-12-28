@@ -34,106 +34,6 @@
         android:gravity="center"/>
 
     <TextView
-        android:id="@+id/tvnopedido"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="No. Pedido"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.116"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvgestion"
-        app:layout_constraintVertical_bias="0.087"
-        android:textSize="20dp"
-        android:textStyle="bold"/>
-
-    <TextView
-        android:id="@+id/tvestado"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Estado"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.516"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvgestion"
-        app:layout_constraintVertical_bias="0.087"
-        android:textSize="20dp"
-        android:textStyle="bold"/>
-
-    <TextView
-        android:id="@+id/tvganancia"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Ganancia"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.870"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvgestion"
-        app:layout_constraintVertical_bias="0.087"
-        android:textSize="20dp"
-        android:textStyle="bold"/>
-
-    <TextView
-        android:id="@+id/tvpedido1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=""
-        android:hint="No. de pedido"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.150"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvnopedido"
-        app:layout_constraintVertical_bias="0.087"
-        android:textSize="18dp"
-        android:textStyle="italic"/>
-
-    <TextView
-        android:id="@+id/tvestado1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=""
-        android:hint="Letra"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.510"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvnopedido"
-        app:layout_constraintVertical_bias="0.087"
-        android:textSize="18dp"
-        android:textStyle="bold"
-        android:background="#ABDAA3" />
-
-    <TextView
-        android:id="@+id/tvganancia1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=""
-        android:hint="$Precio pedido"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.930"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvnopedido"
-        app:layout_constraintVertical_bias="0.087"
-        android:textSize="18dp"
-        android:textStyle="normal"/>
-
-    <CheckBox
-        android:id="@+id/cbpedido1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=""
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/tvpedido1"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvgestion"
-        app:layout_constraintVertical_bias="0.198" />
-
-    <TextView
         android:id="@+id/tvgananciastotales"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -208,4 +108,41 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.043"
         android:backgroundTint="@color/verde"/>
+
+    <TableLayout
+        android:id="@+id/tabla"
+        android:layout_width="409dp"
+        android:layout_height="394dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvgestion">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvpedido"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="No. Pedido" />
+
+            <TextView
+                android:id="@+id/tvestado"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="Estado" />
+
+            <TextView
+                android:id="@+id/tvtotalganancia"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Total Ganancia" />
+        </TableRow>
+
+    </TableLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
